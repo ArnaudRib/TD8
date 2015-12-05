@@ -32,6 +32,8 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 
 ![ArbreFig1](https://github.com/ArnaudRib/TD6/blob/master/Photos/ArbreFig1.png)
 
+_________________________________________
+
 ##### Photo du code du Parcours Aléatoire n°1 :
 
 ![ParcoursAleatoire21](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAléatoire.png)
@@ -53,6 +55,8 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 -		Remonter les racines est impossible. Une fois que l'on a dépassé un niveau dans une même branche, on peut remonter. C'est pourquoi ``acfbehgd`` et ``acfbdegh`` sont faux.
 
 -> Finalement, les deux seuls résultats valables proposés sont : ``abdeghcf`` et ``abegdhcf``.
+
+_________________________________________
 
 ##### Photo du code du Parcours Aléatoire n°2 :
 
