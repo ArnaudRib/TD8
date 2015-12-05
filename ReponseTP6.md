@@ -46,11 +46,11 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 ```
 
 
-**Cette partie du code indique que la première lettre de la réponse de l'algorithme est obligatoirement A, le sommet de l'arbre.
+-		Cette partie du code indique que la première lettre de la réponse de l'algorithme est obligatoirement A, le sommet de l'arbre.
 
 -> Il ne reste donc les suites suivantes : ``abdeghcf``, ``acfbdegh``,  ``acfbehgd`` et ``abegdhcf``
 
-**Remonter les racines est impossible. Une fois que l'on a dépassé un niveau dans une même branche, on peut remonter. C'est pourquoi ``acfbehgd`` et ``acfbdegh`` sont faux.
+-		Remonter les racines est impossible. Une fois que l'on a dépassé un niveau dans une même branche, on peut remonter. C'est pourquoi ``acfbehgd`` et ``acfbdegh`` sont faux.
 
 -> Finalement, les deux seuls résultats valables proposés sont : ``abdeghcf`` et ``abegdhcf``.
 
