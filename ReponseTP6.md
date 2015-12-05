@@ -28,15 +28,15 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 
 ##Question 3.3 :
 
-#### Photo de l'arbre cobbaye : 
+### Photo de l'arbre cobbaye : 
 
 ![ArbreFig1](https://github.com/ArnaudRib/TD6/blob/master/Photos/ArbreFig1.png)
 
-#### Photo du code du Parcours Aléatoire n°1 :
+##### Photo du code du Parcours Aléatoire n°1 :
 
 ![ParcoursAleatoire21](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAléatoire.png)
 
-#### Réponse à la question :
+##### Réponse à la question :
 
 ```java
 		if (a!=null){
