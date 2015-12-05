@@ -45,6 +45,7 @@ Réponse à la question :
 			}
 ```
 
+
 - Cette partie du code indique que la première lettre de la réponse de l'algorithme est obligatoirement A, le sommet de l'arbre.
 - 
 -> Il ne reste donc les suites suivantes : ``abdeghcf``, ``acfbdegh``,  ``acfbehgd`` et ``abegdhcf``
