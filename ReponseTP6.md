@@ -15,6 +15,7 @@ System.out.println(arbre1.filsDroit.nomSommet);
 PS : (extra) le code correspondant est la fonction AffichagePrefixe sur le ArbreBinaire.java.
 
 ----------------------
+----------------------
 
 ## Question 3.2 :
 1. Exemple de parcours en largeur de la figure 1 : 
@@ -28,6 +29,7 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 
 ![ArbreBinaire](https://github.com/ArnaudRib/TD6/blob/master/Photos/ArbreBinaire.png)
 
+----------------------
 ----------------------
 
 ##Question 3.3 :
