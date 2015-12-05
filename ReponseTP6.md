@@ -30,7 +30,7 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 
 Photo de l'arbre cobbaye : 
 
-![Arbre](https://github.com/ArnaudRib/TD6/blob/master/Photos/ArbreFig1.png)
+![ArbreFig1](https://github.com/ArnaudRib/TD6/blob/master/Photos/ArbreFig1.png)
 
 Photo du code :
 
