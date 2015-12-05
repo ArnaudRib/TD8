@@ -27,7 +27,23 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 ![ArbreBinaire](https://github.com/ArnaudRib/TD6/blob/master/Photos/ArbreBinaire.png)
 
 ##Question 3.3 :
+
+Photo du code :
+
 ![ParcoursAleatoire21](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAléatoire.png)
+
+Réponse à la question :
+
+```java
+		if (a!=null){
+			System.out.print(a.nomSommet);
+			...
+			}
+```
+
+- Cette partie du code indique que la première lettre de la réponse de l'algorithme est obligatoirement A, le sommet de l'arbre.
+-> Il ne reste donc les suites suivantes : ``abdeghcf``, ``acfbdegh``,  ``acfbehgd`` et ``abegdhcf``
+
 
 ![ParcoursAleatoire21](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire21.png)
 
