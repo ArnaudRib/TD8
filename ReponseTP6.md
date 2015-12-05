@@ -24,9 +24,11 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 
 ###Photo de la console après l'exécution du programme ArbreBinaire.java : 
 
-![ParcoursAleatoire](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire.png)
+![ArbreBinaire](https://github.com/ArnaudRib/TD6/blob/master/Photos/ArbreBinaire.png)
 
 ##Question 3.3 :
+![ParcoursAleatoire21](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAléatoire21.png)
+
 ![ParcoursAleatoire21](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire21.png)
 
 ![ParcoursAleatoire22](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire22.png)
