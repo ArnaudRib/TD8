@@ -16,9 +16,8 @@ PS : (extra) le code correspondant est la fonction AffichagePrefixe sur le Arbre
 
 ## Q 3.2 :
 Exemple de parcours en largeur de la figure 1 : 
-
-    (A) (BC) (DEF) (GH)
-    (A) (CB) (FED) (HG)
+    * (A) (BC) (DEF) (GH)
+    * (A) (CB) (FED) (HG)
 
 
 
