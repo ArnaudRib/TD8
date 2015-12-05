@@ -1,7 +1,7 @@
 ## Q 3.1.1 :
 
 
-* Exemple de parcours en profondeur préfixée, postfixée, et infixée : 
+1. Exemple de parcours en profondeur préfixée, postfixée, et infixée : 
 -		affichage préfixé : on visite A en premier, puis B puis C,
 -		affichage postfixé : on visite B, ensuite C et enfin A,
 -		affichage infixé : on visite B, puis A et enfin C.
