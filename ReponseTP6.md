@@ -22,6 +22,6 @@ PS : (extra) le code correspondant est la fonction AffichagePrefixe sur le Arbre
 
 PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le ArbreBinaire.java.
 
-2. Photo de la console après l'exécution du programme ArbreBinaire.java : 
+###Photo de la console après l'exécution du programme ArbreBinaire.java : 
 
 ![ArbreBinaire](https://github.com/ArnaudRib/TD6/blob/master/ArbreBinaire.png)
