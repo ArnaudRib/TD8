@@ -1,4 +1,4 @@
-## Q 3.1.1 :
+## Question 3.1.1 :
 
 1. Exemple de parcours en profondeur préfixée, postfixée, et infixée : 
     -		affichage préfixé : on visite A en premier, puis B puis C,
@@ -14,7 +14,7 @@ System.out.println(arbre1.filsDroit.nomSommet);
 ```
 PS : (extra) le code correspondant est la fonction AffichagePrefixe sur le ArbreBinaire.java.
 
-## Q 3.2 :
+## Question 3.2 :
 1. Exemple de parcours en largeur de la figure 1 : 
 
 * (A) (BC) (DEF) (GH)
@@ -24,10 +24,10 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 
 ###Photo de la console après l'exécution du programme ArbreBinaire.java : 
 
-![ArbreBinaire](https://github.com/ArnaudRib/TD6/blob/master/Photos/ArbreBinaire.png)
+![ParcoursAleatoire](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire.png)
 
-```
+##Question 3.3 :
 ![ParcoursAleatoire21](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire21.png)
 
 ![ParcoursAleatoire22](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire22.png)
-```
+
