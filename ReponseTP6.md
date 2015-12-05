@@ -26,6 +26,8 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 
 ![ArbreBinaire](https://github.com/ArnaudRib/TD6/blob/master/Photos/ArbreBinaire.png)
 
+```
 ![ParcoursAleatoire21](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire21.png)
 
 ![ParcoursAleatoire22](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire22.png)
+```
