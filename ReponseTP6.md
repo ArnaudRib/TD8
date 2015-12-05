@@ -54,8 +54,12 @@ PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le Arbr
 
 -> Finalement, les deux seuls résultats valables proposés sont : ``abdeghcf`` et ``abegdhcf``.
 
+##### Photo du code du Parcours Aléatoire n°2 :
 
 ![ParcoursAleatoire21](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire21.png)
 
 ![ParcoursAleatoire22](https://github.com/ArnaudRib/TD6/blob/master/Photos/ParcoursAleatoire22.png)
+
+##### Réponse à la question :
+
 
