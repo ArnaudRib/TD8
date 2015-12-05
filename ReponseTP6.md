@@ -1,5 +1,4 @@
-# Q 3.1.1 :
-## coucou
+### Q 3.1.1 :
 ![ArbreBinaire](https://github.com/ArnaudRib/TD6/blob/master/ArbreBinaire.png)
 
 //   Pour ABC
@@ -7,7 +6,7 @@
 // 		affichage postfixé : on visite B, ensuite C et enfin A,
 // 		affichage infixé : on visite B, puis A et enfin C.
 
-# Pseudo code affichage préfixé :
+### Pseudo code affichage préfixé :
 //   Pour ABC
 // 		System.out.println(arbre1.nomSommet); 
 //   	System.out.println(arbre1.filsGauche.nomSommet);
