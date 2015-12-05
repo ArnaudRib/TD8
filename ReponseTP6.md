@@ -1,5 +1,5 @@
 # Q 3.1.1 :
-2# coucou
+## coucou
 //   Pour ABC
 // 		affichage préfixé : on visite A en premier, puis B puis C,
 // 		affichage postfixé : on visite B, ensuite C et enfin A,
