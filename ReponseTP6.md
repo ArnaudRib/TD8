@@ -6,12 +6,12 @@
     -		affichage postfixé : on visite B, ensuite C et enfin A,
     -		affichage infixé : on visite B, puis A et enfin C.
 
-Pseudo code affichage préfixé :
-//   Pour ABC
-// 		System.out.println(arbre1.nomSommet); 
-//   	System.out.println(arbre1.filsGauche.nomSommet);
-//		System.out.println(arbre1.filsDroit.nomSommet);
-
+2. Pseudo code affichage préfixé pour l'arbre ABC :
+ '''java
+ 		System.out.println(arbre1.nomSommet); 
+    	System.out.println(arbre1.filsGauche.nomSommet);
+		System.out.println(arbre1.filsDroit.nomSommet);
+'''
 
 Photo de la console après l'exécution du programme ArbreBinaire.java : 
 
