@@ -1,6 +1,7 @@
 # Q 3.1.1 :
 ## coucou
 ![ArbreBinaire][https://github.com/ArnaudRib/TD6/blob/master/ArbreBinaire.png]
+
 //   Pour ABC
 // 		affichage préfixé : on visite A en premier, puis B puis C,
 // 		affichage postfixé : on visite B, ensuite C et enfin A,
