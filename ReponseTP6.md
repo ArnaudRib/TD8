@@ -20,6 +20,8 @@ Exemple de parcours en largeur de la figure 1 :
 * (A) (BC) (DEF) (GH)
 * (A) (CB) (FED) (HG)
 
+PS : (extra) le code correspondant est la fonction AffichagEnLargeur sur le ArbreBinaire.java.
+
 
 
 Photo de la console après l'exécution du programme ArbreBinaire.java : 
