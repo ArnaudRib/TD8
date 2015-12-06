@@ -71,8 +71,7 @@ _________________________________________
 
 -	Les parcours ``abdeghcf`` et ``abegdhcf`` sont impossibles car passer de la lettre "a" à la lettre "b" implique de voyager vers gauche avant de passer vers la droite ce qui n'est pas permis par le programme. 
 -	Même résonnement pour le parcours ``bdehgafc``, ``cfbdegha``, ``acfbdegh`` et ``cfbdegha`` autour de la lettre "b" cette fois.
--	De même pour le parcours ``fchegdba`` autour de la lettre "e" finalement.
 -	``cfhgeabd`` et ``fchgdbea`` ne sortiront pas de l'algorithme car "e" n'est pas un fils direct de "a" mais un petit fils.
 -	Même resonnement pour ``fcaehgbd`` mais à une profondeur de moins.
 
--> Finalement, il ne reste plus que : ``acfbehgd``, ``cfbehgda``, ``cfabehgd``, ``fcabehgd``, ``cfhgebda``, ``fcehgdba``, ``fcahgebd``.
+-> Finalement, il ne reste plus que : ``acfbehgd``, ``cfbehgda``, ``cfabehgd``, ``fcabehgd``, ``cfhgebda``, ``fcehgdba``, ``fchegdba`` et ``fcahgebd``.
