@@ -11,6 +11,8 @@ import javax.security.auth.kerberos.KerberosKey;
 
 public class Dictionnaire {
 
+	public static int k=0;
+	
 	public static boolean find(String mot){
 		Charset charset=Charset.forName("UTF-8");
 		Path path= Paths.get("/home/eleves/2018/aribeyrolles/workspace/TP8/src/dico1.txt");
@@ -41,6 +43,7 @@ public class Dictionnaire {
 				}
 			
 			int i= (int)(Math.random()*(k-1)); //random un chiffre dans la range du fichier
+			
 			BufferedReader reader1=Files.newBufferedReader(path, charset);
 			
 			while ((line=reader1.readLine())!=null){
@@ -59,34 +62,58 @@ public class Dictionnaire {
 		}
 	}
 	
-	public static String evaluer(String motvoulu, String motrecherche){
-		int nblettre=motvoulu.length();
+	public static String evaluer(String motgenere, String motvoulu){
 		String code="";
-		if (motvoulu.length()==motrecherche.length()){
+
+		if (motvoulu.length()==motgenere.length()){
 			for (int i=0; i<motvoulu.length(); i++){
-				if (motvoulu.charAt(i)==motrecherche.charAt(i)){
+				if (motvoulu.charAt(i)==motgenere.charAt(i)){
 					code+= "o";
 				}
-			}
-			
+				if (motvoulu.charAt(i)!=motgenere.charAt(i) && motgenere.indexOf(motvoulu.charAt(i))!=-1){
+					code+= "-";
+				}
+				if (motgenere.indexOf(motvoulu.charAt(i))==-1){
+					code+="x";
+				}
+			}	
 		}
 
-
-		
-		
-		System.out.println(code);
-		return "";
+		return code;
 	}
 	
 	public static void main(String[] args) {
-		String motdemande="zoo";
+		String motdemande="lapin";
 		System.out.println("Le mot '"+motdemande+ "' est-il dans le dico?  :  "+find(motdemande));
-		System.out.println("Le mot généré aléatoirement est : "+chose());
-		
+		String test = chose();
+		System.out.println("Le mot généré aléatoirement est : "+test);
+		boolean egal=false;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("A quel mot pensez-vous?");
-		String motvoulu=sc.nextLine();
-		evaluer(motvoulu, motdemande);
+
+		while (!egal){
+			System.out.println("");
+			System.out.println("> A quel mot pensez-vous?");
+			String motvoulu=sc.nextLine();
+
+			if (motvoulu.length() == test.length()) {
+				if (find(motvoulu)) {
+					k++;
+					System.out.print(evaluer(test, motvoulu));
+				} else {
+					System.out.println("");
+					System.out.println("Le mot demandé n'est pas dans le dictionnaire.");
+				}
+				if (motvoulu.equals(test)) {
+					egal=true;
+				}
+			} else {
+				System.out.println("");
+				System.out.println("La taille du mot demandé n'est pas de taille 7.");
+			}
+		}
+		System.out.println("");
+		System.out.println("");
+		System.out.println("Trouver le mot vous a pris " +k+" essais.");
 		//evaluer(motvoulu, chose());
 		
 	}
