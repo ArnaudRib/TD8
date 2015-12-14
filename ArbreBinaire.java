@@ -1,14 +1,11 @@
-import java.util.Random;
-
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
 
 
 public class ArbreBinaire {
 
 	//attributs
-	String nomSommet;
-	ArbreBinaire filsGauche;
-	ArbreBinaire filsDroit;
+	private String nomSommet;
+	private ArbreBinaire filsGauche;
+	private ArbreBinaire filsDroit;
 
 	//constructeurs
 	public ArbreBinaire(String nomSommet){
@@ -22,7 +19,7 @@ public class ArbreBinaire {
 	}
 	
 	public static void AffichagePrefixe(ArbreBinaire Arbre){ 
-		System.out.print(Arbre.nomSommet+" ");
+		System.out.println(Arbre.nomSommet);
 		if (Arbre.filsGauche != null)
 			AffichagePrefixe(Arbre.filsGauche);
 		if (Arbre.filsDroit != null)
@@ -30,14 +27,13 @@ public class ArbreBinaire {
 	}
 	
 	
-	public static int profondeur(ArbreBinaire Arbre){ // Q 3.1
+	public static int profondeur(ArbreBinaire Arbre){
 	    if(Arbre == null)
 	        return 0;
 	    else {
 	        return 1+Math.max(profondeur(Arbre.filsGauche), profondeur(Arbre.filsDroit));
 	    }
 	}
-	
 	
 	public static String heigth(ArbreBinaire Arbre, int prof) { // Q  3.2
 	    String G, D;
@@ -63,89 +59,78 @@ public class ArbreBinaire {
 	    }
 	}
 	
-	public static void parcoursAleatoire(ArbreBinaire a){
-		Random r = new Random();
-		if (a!=null){
-			System.out.print(a.nomSommet);
-			if (r.nextInt()%2==0){
-				parcoursAleatoire(a.filsGauche);
-				parcoursAleatoire(a.filsDroit);
-			}else{
-				parcoursAleatoire(a.filsDroit);
-				parcoursAleatoire(a.filsGauche);
+	
+	public static ArbreBinaire inserer(String str, ArbreBinaire a){
+	      if (a == null)
+	        return new ArbreBinaire(str, null, null);
+	      if (str.compareTo(a.nomSommet) <= 0)
+	        a.filsGauche = inserer(str, a.filsGauche);
+	      else if (str.compareTo(a.nomSommet) >= 0)
+		     a.filsDroit = inserer(str, a.filsDroit);
+	      return a;
+	    }
+
+	public static boolean contient(String str,ArbreBinaire a){
+		boolean test=false;
+			if (a.filsGauche != null){
+				if (str.compareTo(a.filsGauche.nomSommet)!=0){
+					test=contient(str, a.filsGauche);
+				}else{
+					test=true;
+				}
 			}
-		}
+			if (a.filsDroit != null && test==false){
+				if (str.compareTo(a.filsDroit.nomSommet)!=0){
+					test=contient(str, a.filsDroit);
+				}else{
+					test=true;
+				}
+			}
+		return test;
 	}
 	
-	public static void parcoursAleatoire2(ArbreBinaire a){
-		Random r = new Random();
-		int rr=r.nextInt()%3;
-		if (a!=null){
-			if(rr==0){
-				System.out.print(a.nomSommet);
-				parcoursAleatoire2(a.filsDroit);
-				parcoursAleatoire2(a.filsGauche);
-			} else if (rr==1){
-				parcoursAleatoire2(a.filsDroit);
-				System.out.print(a.nomSommet);
-				parcoursAleatoire2(a.filsGauche);
+	public static int i;
+	
+	public static int compteRecherche(String str,ArbreBinaire a, boolean test){
+		if (a.filsGauche != null){
+			if (str.compareTo(a.filsGauche.nomSommet)!=0){
+				i++;
+				i=compteRecherche(str, a.filsGauche, test);
 			}else{
-				parcoursAleatoire2(a.filsDroit);
-				parcoursAleatoire2(a.filsGauche);
-				System.out.print(a.nomSommet);
+				test=true;
 			}
 		}
+		if (a.filsDroit != null && test==false){
+			if (str.compareTo(a.filsDroit.nomSommet)!=0){
+				i=compteRecherche(str, a.filsDroit, test);	
+			}else{
+				test=true;
+			}
+		}
+		return i;
 	}
-	
 	
 	//main
 	public static void main(String[] args) {
-		//ARBRE1
-		
-			//Création
-		ArbreBinaire H = new ArbreBinaire("H");
-		ArbreBinaire G = new ArbreBinaire("G");
-		ArbreBinaire D = new ArbreBinaire("D");
-		ArbreBinaire F = new ArbreBinaire("F");
-		ArbreBinaire E = new ArbreBinaire("E", G, H);
-		ArbreBinaire B=new ArbreBinaire("B", D, E);
-		ArbreBinaire C=new ArbreBinaire("C", F, null);
-		ArbreBinaire arbre1 =new ArbreBinaire("A", B, C);
-		
-			//Affichage
-		System.out.print("Affichage préfixe :  ");
-		AffichagePrefixe(arbre1);
-		System.out.println("");
-		System.out.println("Pronfondeur : " + profondeur(arbre1));
-		System.out.print("Affichage en largeur :  ");
-		afficheEnLargeur(arbre1);
-		
-		System.out.println("");
-		System.out.println("");
-
-		
-		//ARBRE 2
-			//Création
-		ArbreBinaire filsGauchetest = new ArbreBinaire("B");
-		ArbreBinaire filsDroittest = new ArbreBinaire("C");
-		ArbreBinaire arbre2 =new ArbreBinaire("A", filsGauchetest, filsDroittest);
-			//Affichage
-		System.out.print("Affichage préfixe :  ");
+		ArbreBinaire arbre2 =new ArbreBinaire("the", null, null);
+		inserer("quick",arbre2);
+		inserer("brown",arbre2);
+		inserer("fox",arbre2);
+		inserer("jumps",arbre2);
+		inserer("over",arbre2);
+		inserer("the",arbre2);
+		inserer("lazy",arbre2);
+		inserer("dog",arbre2);
+		System.out.println("affichage pr√©fixe: ");
 		AffichagePrefixe(arbre2);
-		System.out.println("");
-		System.out.println("Pronfondeur : " +profondeur(arbre2));
-		System.out.print("Affichage en largeur :  ");
+		System.out.println("affichage en largeur: ");
 		afficheEnLargeur(arbre2);
-		
 		System.out.println("");
-		System.out.println("");
-		System.out.println("Random1 arbre1 : ");
-		parcoursAleatoire(arbre1);
+		String mot ="dog";
+		System.out.println("Le mot "+mot+" est-il dans l'arbre? "+contient(mot, arbre2));
+		System.out.println("Le mot 'lapin' est-il dans l'arbre? "+contient("lapin", arbre2));
+		boolean test=false;
 
-		System.out.println("");
-		System.out.println("");
-		System.out.println("Random2 arbre1 : ");
-		parcoursAleatoire2(arbre1);
+		System.out.println("Nombre de recherche : "+compteRecherche("lazy", arbre2, test)+".");
 	}
 }
-
